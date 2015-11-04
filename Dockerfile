@@ -1,7 +1,7 @@
 FROM totem/python-base:3.4-trusty
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install python-pip -y
+RUN apt-get update && apt-get install python-pip -y && apt-get install wget
 #Install Supervisor
 RUN pip install supervisor==3.1.2
 
