@@ -1,6 +1,6 @@
-# rabbitmq-cluster
+# base-rabbitmq-cluster
 
-Rabbitmq Cluster using Docker.
+Base Rabbitmq Cluster using Docker.
 
 ## Status
 In Testing
