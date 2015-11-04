@@ -1,5 +1,5 @@
 FROM totem/python-base:3.4-trusty
-
+RUN apt-get install python-pip -y
 ENV DEBIAN_FRONTEND noninteractive
 
 #Install Supervisor
