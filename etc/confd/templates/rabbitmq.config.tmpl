@@ -1,5 +1,6 @@
 [{rabbit, [
     {loopback_users, []},
+    {cluster_partition_handling, pause_minority},
     {cluster_nodes, {{"{"}}{{ if printf "/rabbitmq/nodes" | ls }}[{{ range $index, $node := printf "/rabbitmq/nodes/*" | gets }}{{if $index }},{{ end }}'rabbit@{{ $node.Key | base  }}'{{ end }}]{{ else }}[]{{ end }}, disc{{ "}}" }},
     {kernel, [
         {inet_dist_listen_max, 44001},
